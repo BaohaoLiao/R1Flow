@@ -2,11 +2,9 @@ import os
 from dataclasses import dataclass, field
 
 import torch
-from datasets import load_dataset
-from datasets import load_from_disk
+from datasets import load_dataset, load_from_disk
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from vllm import LLM, SamplingParams
-
+from vllm import SamplingParams
 from trl import (
     GRPOConfig, 
     GRPOTrainer,
