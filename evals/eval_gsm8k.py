@@ -31,6 +31,8 @@ def eval_gsm8k(model_path, num_gpus, sampling_params, seed, dataset, outfile):
         "num_samples": len(dataset),
         "acc": accuracy, 
     })
+
+    print("-"*20, " Before training ", "-"*20)
     print(all_samples[0])
 
     for i in range(len(dataset)):
